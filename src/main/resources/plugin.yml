@@ -1,0 +1,21 @@
+name: AnvilUpgrade
+version: '1.0.0'
+main: com.anvilupgrade.AnvilUpgrade
+api-version: '1.21'
+description: 모루 기반 장비 강화 시스템
+
+authors:
+  - Claude
+
+commands:
+  upgrade:
+    description: 강화 시스템 명령어
+    usage: /upgrade <on|off|give|reload>
+
+permissions:
+  anvilupgrade.admin:
+    description: 관리자 권한 (give, reload)
+    default: op
+  anvilupgrade.use:
+    description: 강화 시스템 사용
+    default: true

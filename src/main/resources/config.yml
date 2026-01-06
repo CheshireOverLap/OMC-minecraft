@@ -1,0 +1,84 @@
+# =======================================
+# AnvilUpgrade 설정 파일
+# =======================================
+
+# 강화 확률 표시 여부
+show-success-chance: true
+
+# 강화석 조합법 결과 개수
+recipe-output-amount: 8
+
+# 레벨별 강화 확률 설정
+# success: 성공 (레벨 상승)
+# failure: 실패 (레벨 유지)
+# downgrade: 하락 (레벨 감소)
+# destroy: 파괴 (아이템 삭제)
+
+level-settings:
+  0:
+    success: 1.0
+    failure: 0.0
+    downgrade: 0.0
+    destroy: 0.0
+  1:
+    success: 0.9
+    failure: 0.1
+    downgrade: 0.0
+    destroy: 0.0
+  2:
+    success: 0.8
+    failure: 0.2
+    downgrade: 0.0
+    destroy: 0.0
+  3:
+    success: 0.7
+    failure: 0.25
+    downgrade: 0.05
+    destroy: 0.0
+  4:
+    success: 0.6
+    failure: 0.25
+    downgrade: 0.1
+    destroy: 0.05
+  5:
+    success: 0.5
+    failure: 0.25
+    downgrade: 0.15
+    destroy: 0.1
+  6:
+    success: 0.4
+    failure: 0.25
+    downgrade: 0.2
+    destroy: 0.15
+  7:
+    success: 0.3
+    failure: 0.25
+    downgrade: 0.25
+    destroy: 0.2
+  8:
+    success: 0.2
+    failure: 0.25
+    downgrade: 0.3
+    destroy: 0.25
+  9:
+    success: 0.1
+    failure: 0.2
+    downgrade: 0.35
+    destroy: 0.35
+
+# 특수 능력 쿨다운 (초)
+ability-cooldowns:
+  # 무기 능력
+  sword_dance: 30        # 검 - 검무
+  stun: 20               # 도끼 - 기절
+  laser_shot: 25         # 활 - 레이저 샷
+  supercharge: 45        # 쇠뇌 - 과충전
+  lightning_spear: 30    # 삼지창 - 번개창
+  grappling_hook: 10     # 낚싯대 - 그래플링 훅
+  shield_bash: 15        # 방패 - 쉴드 배쉬
+  
+  # 방어구 능력
+  cleansing: 60          # 투구 - 정화
+  absorption: 90         # 흉갑 - 흡수
+  regeneration: 60       # 레깅스 - 재생
+  double_jump: 5         # 부츠 - 더블 점프
